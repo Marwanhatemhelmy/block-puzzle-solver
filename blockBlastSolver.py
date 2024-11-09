@@ -2,122 +2,6 @@ from iso import BlockBlast,Solution
 import itertools
 from copy import deepcopy
 
-arr = [
-    [1,1,1,0,0,1,1,0],
-    [0,1,1,0,0,1,0,0],
-    [0,0,0,0,1,1,1,0],
-    [0,0,0,0,1,1,1,1],
-    [0,1,1,0,0,0,0,0],
-    [0,0,0,0,1,1,1,1],
-    [0,0,0,0,0,0,0,0],
-    [1,1,1,0,1,1,1,0]
-]
-
-puzzle0 = [
-    [0,1,0],
-    [1,1,1]
-]
-puzzle1 = [
-    [1,1,1]
-]
-puzzle2 = [
-    [1,1,1],
-    [1,1,1],
-    [1,1,1]
-]
-
-# arr = [
-#     [0,1,1,1,1,1,0,0],
-#     [0,0,0,1,1,1,0,1],
-#     [0,0,0,0,0,0,0,0],
-#     [0,0,0,0,0,0,1,1],
-#     [1,1,1,1,1,0,0,1],
-#     [0,1,0,1,1,1,1,1],
-#     [0,1,0,0,0,1,1,0],
-#     [0,1,0,1,0,0,1,0]
-# ]
-
-# puzzle0 = [
-#     [0,1,1],
-#     [1,1,0]
-# ]
-# puzzle1 = [
-#     [1,1],
-#     [1,1]
-# ]
-# puzzle2 = [
-#     [1],
-#     [1],
-#     [1],
-#     [1],
-#     [1]
-# ]
-
-# arr = [
-#     [1,0,1,1,1],
-#     [1,0,0,1,1],
-#     [1,1,0,1,1],
-# ]
-
-# puzzle0 = [
-#     [1,0],
-#     [1,1],
-#     [0,1]
-# ]
-# puzzle1 = [
-#     [1,1,1],
-#     [0,0,1],
-#     [0,0,1]
-# ]
-
-# puzzle2 = [
-#     [1,0,0],
-#     [1,1,1]
-# ]
-
-# arr = [
-#     [1,0,0,0,0,0,0,1],
-#     [1,1,1,1,1,1,1,0],
-#     [0,0,0,0,0,0,0,0],
-#     [0,1,1,1,1,1,1,1],
-#     [0,1,1,1,1,1,1,1],
-#     [1,1,1,1,1,1,0,1],
-#     [0,0,0,0,0,0,0,0],
-#     [1,0,1,1,1,1,0,0]
-# ]
-# puzzle0 = [
-#     [1,0],
-#     [1,1],
-#     [0,1]
-# ]
-# puzzle1 = [
-#     [1,1],
-#     [0,1]
-# ]
-# puzzle2 = [
-#     [1,1],
-#     [0,1]
-# ]
-# arr = [
-#     [1,0,1,1,1,1,1,1],
-#     [1,1,1,1,1,0,1,1],
-#     [1,1,1,1,1,1,0,1],
-#     [1,1,0,0,1,1,0,0],
-#     [1,1,0,1,1,0,0,1],
-#     [1,1,1,1,0,0,1,1],
-#     [0,1,0,1,1,1,1,0],
-#     [0,0,0,0,0,1,0,0]
-
-# ]
-# puzzle0 = [[1,1,1],
-#            [0,0,1],
-#            [0,0,1]]
-# puzzle1 = [[0,1,1],
-#            [1,1,0]]
-# puzzle2 = [
-#     [1,0,0],
-#     [1,1,1]
-# ]
 
 # this class if for multiple puzzles as it's name interprut
 class solutionForMultiplePuzzles:
@@ -265,43 +149,9 @@ class solutionForMultiplePuzzles:
                 l[i] = list(l[i])
             results += l
         return results
-
+    # this function returns all permutaions of an array
     def returnPermutaionsOfArray(self,arr):
         result = []
         for p in itertools.permutations(arr):
             result.append(list(p))
         return result
-block = BlockBlast(arr)
-def returnFormulatedSolutionsData(solutions):
-    result = []
-    for i in solutions:
-        temp = []
-        for j in solutions[i]:
-            temp.append([i,j])
-        result.append(temp)
-    return result
-def returnCombinations(formulatedSolutionsData):
-    results = []
-    combinations = list(itertools.product(*formulatedSolutionsData))
-
-    for comb in combinations:
-        results.append(list(comb))
-    return results
-b = BlockBlast(arr)
-s = solutionForMultiplePuzzles(b.returnFreeSlotedMap(),[puzzle0,puzzle1,puzzle2])
-sol = Solution(s.freeSlotedMap,puzzle1)
-# print(sol.returnSolutions())
-# s.placeBlock([(5,6,7),6],puzzle0)
-# sol2 = Solution(s.freeSlotedMap,puzzle1)
-# print(sol2.returnSolutions())
-#s.blastMap()
-#s.placeBlock([(0,1,2),0],puzzle1)
-print(s.returnPosibleSolutions())
-# print(s.returnSolutionWithTheMostBlasts())
-# s.blastMap()
-#sol = Solution(s.freeSlotedMap,puzzle0)
-#print(sol.returnSolutions())
-# print(s.freeSlotedMap)
-# s.placeBlock([(1,2,3),1],puzzle0)
-# print(s.freeSlotedMap)
-# print(s.returnNumberOfFreeSlots())
