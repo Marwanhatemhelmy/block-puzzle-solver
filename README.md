@@ -3,9 +3,9 @@ you know you'r so miserable when you think of nothing but making a block puzzle 
   and not in any normal time but in the middle of a law lecture.
 
 the game is all about putting block puzzles in their desired slots as shown in the following illustrations
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `red means the desired place for the puzzle`
-- ![#f03c15](https://placehold.co/15x15/A020F0/A020F0.png) `purple is obviously the puzzle itself`
-- ![#f03c15](https://placehold.co/15x15/008000/008000.png) `and green is the rows or columns to be vanished`
+- ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) `red means the desired place for the puzzle`
+- ![#A020F0](https://placehold.co/15x15/A020F0/A020F0.png) `purple is obviously the puzzle itself`
+- ![#008000](https://placehold.co/15x15/008000/008000.png) `and green is the rows or columns to be vanished`
 
 `first movement`
 
