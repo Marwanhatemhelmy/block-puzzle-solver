@@ -1,5 +1,5 @@
 # block-puzzle-solver
-you know you'r down when you think of nothing but making a block puzzle solver ,
+you know you'r so miserable when you think of nothing but making a block puzzle solver ,
   and not in any normal time but in the middle of a law lecture.
 
 the game is all about putting block puzzles in their desired slots as shown in the following illustrations
