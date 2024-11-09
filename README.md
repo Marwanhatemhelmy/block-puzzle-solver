@@ -36,14 +36,23 @@ unfortunately the map could get locked down that there is no way you can sort th
 ![462551117_1074106517779050_2056490610070259805_n](https://github.com/user-attachments/assets/b33a771c-b621-4145-9a96-d5f6b20898c1)
 
 for this block puzzle solver you can think of the map as a nested array where every row e.g (nestedArray[i]) has 0s and 1s,
+
 1 = obsticle or a non-free slot
+
 0 = free slot
+
 map = [
+
   [0,1,1,1],
+
   [0,0,0,1]
+
 ]
+
 the same goes with the puzzle , each puzzle must has rows and each row has it's own 1s & 0s
+
 1 = part of the puzzle
+
 0 = not part of the puzzle
 
 `note : you need to complete the puzzle's rows with zeros because every row must has the same length`
