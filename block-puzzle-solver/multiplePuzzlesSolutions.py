@@ -120,7 +120,7 @@ class MultiplePuzzlesSolutions(MapManager,MapAbstractMethods):
             i+=1
 
     # this function returns the solution with most number of vanished rows or/and columns.
-    def returnSolutionWithTheMostBlasts(self):
+    def returnSolutionsWithTheMostBlasts(self):
         return self.returnPosibleSolutions()[max(list(self.returnPosibleSolutions().keys()))]
 
     # *abstract function
