@@ -33,6 +33,13 @@ class MultiplePuzzlesSolutions(MapManager,MapAbstractMethods):
             # combination of puzzles & checks if it is valid or not , if it's not valid it breaks
             # otherwise it will continue looping
             self.__recursivePuzzlesCombinationLoop(thisCombination,0,result)
+
+        # this is what the result will look like:
+        # this number of free slots is when this particular puzzles with this particular sequence are put
+        # {number of free slots : [{puzzleIndex:[(rows):column],puzzleIndex:[(rows):column],puzzleIndex:[(rows):column]}]
+        #  ,number of free slots : [{puzzleIndex:[(rows):column],puzzleIndex:[(rows):column],puzzleIndex:[(rows):column]}]}
+        # example:
+        # {37: [{0: [(5, 6), 2], 1: [(5,), 0], 2: [(4, 5, 6), 5]}, {1: [(5,), 0], 0: [(5, 6), 2], 2: [(4, 5, 6), 5]}]}
         return result
     
 
