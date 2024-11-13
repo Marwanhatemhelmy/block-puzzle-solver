@@ -30,4 +30,4 @@ print(solutions.returnPosibleSolutions())
 
 ###########################################################################
 # returns the solutions that vanishes the most rows and/or columns :
-print(solutions.returnSolutionWithTheMostBlasts())
+print(solutions.returnSolutionsWithTheMostBlasts())
